@@ -17,7 +17,7 @@ with sync_playwright() as p:
     page.wait_for_timeout(3000)
     browser.close()
     
-#Practice same thing with another website
+# Practice same thing with another website
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
